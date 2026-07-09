@@ -30,29 +30,30 @@
         <h1>Registration</h1>
     </div>
     <div class="Registration-box">
-        <form>
+        <form method="POST">
+            {%csrf_token %}
             <div>
                 <label>first name</label>
-                <input type="text">
+                <input type="text" name="username">
             </div>
             <br>
             <div>
                 <label>last name</label>
-                <input type="text">
+                <input type="text" name="lastname">
             </div>
             <br>
             <div>
                 <label>mail</label>
-                <input type="email">
+                <input type="email" name="email">
             </div>
             <br>
             <div>
                 <label>password</label>
-                <input type="password"> 
+                <input type="password" name="password"> 
             </div>
             <br>
             <div>
-                <input type="submit">
+                <input type="submit" value="Submit">
             </div>
         </form>
     </div>
