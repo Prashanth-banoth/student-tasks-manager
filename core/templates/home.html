@@ -20,7 +20,7 @@
         label{
             display: inline-block;
             justify-content:flex-end;
-            width: 150px;
+            width: 200px;
         }
         
     </style>
@@ -33,17 +33,12 @@
         <form method="POST">
             {%csrf_token %}
             <div>
-                <label>first name</label>
+                <label>username</label>
                 <input type="text" name="username">
             </div>
             <br>
             <div>
-                <label>last name</label>
-                <input type="text" name="lastname">
-            </div>
-            <br>
-            <div>
-                <label>mail</label>
+                <label>email</label>
                 <input type="email" name="email">
             </div>
             <br>

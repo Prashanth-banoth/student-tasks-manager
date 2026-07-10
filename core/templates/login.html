@@ -1,7 +1,7 @@
 <h2>Login page</h2>
-<form>
-    <input type="text" placeholder="Username"><br><br>
-    <input type="password" placeholder="Password"><br><br>
+<form method="POST" style="justify-content: center;"align-items="center">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username"><br><br>
+    <input type="password" name="password" placeholder="Password"><br><br>
     <button>Login</button>
-
 </form>
