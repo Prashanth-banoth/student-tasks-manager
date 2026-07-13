@@ -24,4 +24,5 @@ urlpatterns = [
     path('home/',views.home,name='home'),
     path('login/',views.login_page,name='login'),
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('add-task/', views.add_task, name='add_task'),
 ]
